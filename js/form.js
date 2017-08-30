@@ -36,7 +36,7 @@
 		var email = $("#email").val();
 		var bride_ = $('input[name="bride_"]:checked').val();
 		var bridegroom_ = $('input[name="bridegroom_"]:checked').val();
-		var message = $("#message").val()
+		var message = $("#message").val();
 
 		var data= {
 			"method": "write",
