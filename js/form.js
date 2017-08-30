@@ -59,7 +59,8 @@
 		
 		$.ajax({
 			type: "post",
-			url: "https://script.google.com/macros/s/AKfycbxiP8CarQcgrB1ARS2b3nnZ9ncsnkVAGeg6r-ODtOhNbvo3TC0/exec", // 填入網路應用程式網址
+			// url: "https://script.google.com/macros/s/AKfycbxiP8CarQcgrB1ARS2b3nnZ9ncsnkVAGeg6r-ODtOhNbvo3TC0/exec", // 填入網路應用程式網址
+			url: "https://script.google.com/macros/s/AKfycbz8zQi6ca0T4_HTlkDhcpZLrjq9_rvgYYhgdC_-SC-9vU2T17I/exec",
 			dataType: "json",
 			data: data,
 			success: function(result,status,xhr){
