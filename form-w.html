@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+
+		<style type="text/css">
+			input[type="checkbox"]:focus + label:before,
+			input[type="radio"]:focus + label:before {
+				box-shadow: 0 0 0 2px #ffffff;
+			}
+		</style>
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt" style="background: #2e3842;">
+						<h1><a href="index.html">Spectral</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<li><a href="form-w.html">婚宴調查表</a></li>
+											<li><a href="gallery.html">相簿</a></li>
+											<li><a href="" onClick="alert('婚禮前一個月公告')">婚禮流程</a></li>
+											<!-- <li><a href="">什麼是戶外婚禮</a></li> -->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- One -->
+					<section id="one" class="wrapper style6" style="text-align: center; /*background: url(./images/background.jpg);*/">
+						<div class="inner" style="/*background: rgba(255,255,255,0.2);*/">
+							<header class="major" style="margin: 0;">
+								<h2 style="color: lightcoral; padding-bottom:0.3em;">&nbsp;牧平和乃玉的婚宴邀請&nbsp;</h2>
+								<!-- <p>誠摯地邀請您來見證我們的幸福~</p> -->
+							</header>
+
+							<form method="post" action="">
+								<div class="row uniform" style="margin: 2%;">
+									<!-- <input type="text" name="method" id="method" value="write" placeholder="method"> -->
+									<div class="7u 12u$(xsmall)" style="text-align: left;">
+										<b style="width: 10em;line-height: 2.75em;">您的大名：<span style="color:red">*</span></b>
+										<input type="text" name="name" id="name" value="" placeholder="需要寄喜帖要留本名哦" required>
+									</div>
+									<div class="12u 12u$(xsmall)" style="display:inline; text-align: left;">
+										<b>是否願意出席：<span style="color:red">*</span></b>&nbsp;
+										<input type="radio" id="answer-yes" name="answer" value="yes" checked="" required>
+										<label for="answer-yes">一千兩百萬個願意!</label>
+
+										<!-- <input type="radio" id="answer-redbomb" name="answer" checked="">
+										<label for="answer-yes">禮到人不到，但還是要記得丟炸彈炸我!</label> -->
+									
+										<input type="radio" id="answer-no" value="no" name="answer">
+										<label for="answer-no">謝謝邀請，我祝福的心與你們同在</label>
+									</div>
+									
+									<div class="12u 12u$(xsmall)" style="display:inline; text-align: left;">
+										<b>和新人的關係？<span style="color:red">*</span></b>&nbsp;
+										<input type="radio" id="relation-boy" name="relation" value="boy" checked="" required>
+										<label for="relation-boy">男方親友</label>
+
+										<input type="radio" id="relation-girl" name="relation" value="girl">
+										<label for="relation-girl">女方親友</label>
+									
+										<input type="radio" id="relation-both" name="relation" value="both">
+										<label for="relation-both">共同好友</label>
+									</div>
+
+									<div class="7u 12u$(xsmall)" style="text-align: left;">
+										<b style="width: 13em;line-height: 2.75em;">當天參加人數：<span style="color:red">*</span></b>
+										<input type="number" name="number" id="number" value="" placeholder="包含你自己唷" pattern="\d*" max="10" required>
+									</div>
+
+									<div class="7u 12u$(xsmall)" style="text-align: left;">
+										<b style="width: 13em;line-height: 2.75em;">需要素食？(位) </b>
+										<input type="number" name="vegetable" id="vegetablenum" placeholder="0" pattern="\d*">
+									</div>
+
+									<div class="7u 12u$(xsmall)" style="text-align: left;">
+										<b style="width: 14em;line-height: 2.75em;">需要兒童座椅？(張)</b>
+										<input type="number" name="child" id="childnum" placeholder="0" pattern="\d*">
+									</div>
+
+									<!-- <div class="7u 12u$(xsmall)" style="text-align: left;">
+									<h2>---選答題---</h2>
+									</div> -->
+									<!-- <div class="12u 12u$(xsmall)" style="display:inline; text-align: left;">
+										<b>是否需要喜帖？</b>&nbsp;&nbsp;
+										<input type="radio" id="invitation-card" name="invitation" value="card">
+										<label for="invitation-card">需要，請寄紙本喜帖給我</label>
+
+										<input type="radio" id="invitation-email" name="invitation" value="email">
+										<label for="invitation-email">需要，請寄電子喜帖給我</label>
+									
+										<input type="radio" id="invitation-no" name="invitation" value="no" checked="">
+										<label for="invitation-no">不用，婚禮相關資訊我知道了</label>
+									</div> -->
+
+									<div id="invitation_adress" class="10u 12u$(xsmall)" style="text-align: left;;">
+										<i class="fa-envelop"></i>
+										<b style="width: 13.75em;line-height: 2.75em;">喜帖寄送地址：</b>
+										<input type="number" name="addresscode" id="addresscode" value="" placeholder="郵遞區號" style="width: 7.5em" pattern="\d*">
+										&nbsp;
+										<input type="text" name="address" id="address" value="" placeholder="也可以填面交啦">
+									</div>
+
+									<div id="invitation_email" class="7u 12u$(xsmall)" style="text-align: left;">
+										<b style="width: 15.75em;line-height: 2.75em;">電子喜帖寄送信箱：</b>
+										<input type="email" name="email" id="email" value="" placeholder="Email">
+									</div>
+
+									<div class="7u 12u$(xsmall)" style="text-align: left;">
+										<b style="width: 12.5em;line-height: 2.75em;">連絡電話(手機)：</b>
+										<input type="tel" name="phone" id="phone" value="" placeholder="如果留假電話我們會哭哭歐">
+									</div>
+
+									<div class="7u 12u$(small)" style="text-align: left;">
+										<input type="checkbox" id="bride_" name="bride_">
+										<label for="bride_">我想抽捧花</label>
+									</div>
+
+									<div class="7u 12u$(small)" style="text-align: left;">
+										<input type="checkbox" id="bridegroom_" name="bridegroom_">
+										<label for="bridegroom_">我想抽花椰菜</label>
+									</div>
+
+
+									<div class="10u 12u$" style="text-align: left;">
+										<b style="width: 8em;line-height: 2.75em;">想對新人說：</b>
+										<textarea name="message" id="message" placeholder="有話想說" rows="5"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions" style="margin: 0 auto;">
+											<li>
+												<input type="submit" value="送出" class="special submit">
+											</li>
+											<li>
+												<input type="reset" value="清空">
+											</li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+					
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul> -->
+						<ul class="copyright">
+							<li>&copy; Eric & Heidi Wedding</li><li><a href="mailto:ericheidiwed@gmail.com">Contact Us</a></li>
+						</ul>
+					</footer>
+
+					
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="modal-header">
+							  	<!-- <span class="close">&times;</span> -->
+							  	<b>感謝您~</b>
+							  	<a href="index.html" class="button" style="line-height: inherit; height: inherit;float: right;">回首頁</a>
+							</div>
+							<div class="modal-body">
+								<img src="https://media.giphy.com/media/osjgQPWRx3cac/giphy.gif" style="margin: auto;display: block;">
+								
+								<!-- <p>感謝您的填寫</p> -->
+								<br>
+						    	<a href="index.html#three" class="button fit special">去留言</a>
+							</div>
+							<div class="modal-footer">
+							</div>
+						</div>
+
+					</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="js/form.js"></script>
+
+	</body>
+</html>
