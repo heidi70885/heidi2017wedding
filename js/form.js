@@ -68,9 +68,9 @@
 				
 			},
 			error: function(xhr, ststus, error){
-				// alert("送出失敗=口=  請將參加資訊通知新人 謝謝");
-				var errorModal = document.getElementById('errorModal');
-				errorModal.style.display = "block";
+				modal.style.display = "block";
+				// var errorModal = document.getElementById('errorModal');
+				// errorModal.style.display = "block";
 			}
 		});
 		return false;
