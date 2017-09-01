@@ -63,14 +63,24 @@
 			url: "https://script.google.com/macros/s/AKfycbz8zQi6ca0T4_HTlkDhcpZLrjq9_rvgYYhgdC_-SC-9vU2T17I/exec",
 			dataType: "json",
 			data: data,
-			success: function(result,status,xhr){
-				modal.style.display = "block";
-				
+			crossDomain: true,
+			success: function(object,result,status){
+				// modal.style.display = "block";
+				if(typeof(object) == "object" && object.result == "Success")
+					modal.style.display = "block";
+				else{
+					var errorModal = document.getElementById('errorModal');
+					errorModal.style.display = "block";
+				}
 			},
-			error: function(xhr, ststus, error){
-				modal.style.display = "block";
-				// var errorModal = document.getElementById('errorModal');
-				// errorModal.style.display = "block";
+			error: function(object,result,status){
+				// modal.style.display = "block";
+				if(typeof(object) == "object" && object.result == "Success")
+					modal.style.display = "block";
+				else{
+					var errorModal = document.getElementById('errorModal');
+					errorModal.style.display = "block";
+				}
 			}
 		});
 		return false;
