@@ -24,6 +24,8 @@
 		if(!confirm("確定要送出嗎？"))
 			return false;
 
+		ga('send', 'social', 'formPage', 'submitButton', 'notag');
+
 		var name = $("#name").val();
 		var answer = $('input[name="answer"]:checked').val();
 		var phone = $("#phone").val();
