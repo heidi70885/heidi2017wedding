@@ -4120,15 +4120,15 @@
 
 				@media screen and (max-width: 736px) {
 
-					ul.tabs li {
+					/*ul.tabs li {
 						display: block;
 						margin: 0 0 .25em 0;
 						padding: 0;
-					}
+					}*/
 
-						ul.tabs li .button {
+						/*ul.tabs li .button {
 							width: 100%;
-						}
+						}*/
 
 				}
 
